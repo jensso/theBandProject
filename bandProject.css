@@ -4,3 +4,139 @@ body {
   background: #777;
   font-family: sans-serif;
 }
+
+body .carousel .slider {
+  display: flex;
+  width: 100%;
+  height: 50vw;
+  background-size: 100% 100%;
+  margin: 0 1vw;
+}
+
+body .carousel .slider span {
+  font-size: 8vw;
+  color: silver;
+  padding: 20vw 3vw;
+  position: absolute;
+}
+
+body .carousel .slider span:nth-of-type(1) {
+  transform: scaleX(-1);
+  left: 2vw;
+}
+
+body .carousel .slider span:nth-of-type(2) {
+  right: 2vw;
+}
+
+body .carousel .slider span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+body .carousel .theBand {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .carousel .theBand .bandImages {
+  display: flex;
+}
+
+body .carousel .theBand .bandImages img {
+  width: 10vw;
+  height: 10vw;
+  padding: 4vw;
+  border: 0.1vw solid white;
+  border-radius: 20vw;
+}
+
+body .carousel p {
+  font-size: 1vw;
+  padding: 1vw 12vw;
+  text-align: center;
+}
+
+body .carousel h4 {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+body .carousel h6 {
+  font-size: 1.5vw;
+}
+
+body .tourDates {
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+
+body .tourDates h4, body .tourDates h6 {
+  font-size: 2vw;
+  text-align: center;
+  color: #777;
+  text-transform: uppercase;
+}
+
+body .tourDates .month {
+  font-size: 1.5vw;
+  text-align: justify;
+  margin: 0 12.5vw;
+  padding: 0.5vw 5vw;
+  border: 0.1vw solid #777;
+  background: white;
+  height: 4vw;
+}
+
+body .tourDates .month b {
+  border-radius: 0.5vw;
+  padding: 0.5vw 1vw;
+  color: white;
+  background: red;
+}
+
+body .tourDates .container {
+  display: flex;
+  justify-content: center;
+}
+
+body .tourDates .container .location {
+  background: white;
+  border: 0.1vw solid #777;
+  margin: 1vw 4vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+
+body .tourDates .container .location img {
+  height: 10vw;
+}
+
+body .tourDates .container .location h6 {
+  font-size: 2vw;
+  background: white;
+  color: #777;
+}
+
+body .tourDates .container .location h5 {
+  background: white;
+  color: #777;
+}
+
+body .tourDates .container .location button {
+  font-size: 1vw;
+  background: #777;
+  color: silver;
+  padding: 1vw;
+}
+
+body .tourDates .container .location button:hover {
+  color: #777;
+  background: silver;
+  cursor: pointer;
+  border-radius: 1vw;
+}
