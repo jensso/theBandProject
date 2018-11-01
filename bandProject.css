@@ -1,6 +1,43 @@
 body {
-  margin: 0.5vw auto;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
   box-sizing: border-box;
   background: #777;
-  font-family: sans-serif;
+}
+
+body nav {
+  height: 3.5vw;
+  background-color: #2a2a2c;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  font-family: Lato;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+body nav li {
+  list-style-type: none;
+  flex-grow: .3;
+  font-size: 1.2vw;
+  align-self: center;
+  text-align: right;
+}
+
+body nav li:first-of-type {
+  flex-grow: 5;
+  font-size: 1.5vw;
+  text-align: left;
+  margin-left: 1vw;
+}
+
+body nav li:last-of-type {
+  margin-right: 1vw;
+}
+
+section {
+  background: #dd2233;
+  font-size: 3vw;
 }
