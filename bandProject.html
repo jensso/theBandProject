@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +18,7 @@
     <li>Tour</li>
     <li>Contact</li>
     <li>More</li>
-    <li>&#128269;</li>
+    <li><i class="fas fa-search"></i></li>
   </nav>
 
   <section class="carousel"></section>
@@ -26,13 +27,21 @@
   <section class="form">
     <p>Contact</p>
     <p>We love our fans!</p>
-    <div>
-      <p>Fan? Drop a note</p>
-      <p>Chicago, US</p>
-      <p>Phone: +00 1515151515</p>
-      <p>Email: email@mail.com</p>
-    </div>
-    <div></div>
+    <main>
+      <div>
+        <p>Fan? Drop a note</p>
+        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+        <p><i class="fas fa-mobile-alt"></i>Phone: +00 1515151515</p>
+        <p><i class="far fa-envelope"></i>Email: email@mail.com</p>
+      </div>
+      <div class="gridContainer">
+        <input type="text" placeholder="Name" class="grid1">
+        <input type="email" placeholder="Email" class="grid2">
+        <textarea type="text"  placeholder="Comment" class="grid3"></textarea>
+        <button type="button" name="button" class="grid4">Send</button>
+      </div>
+    </main>
+
   </section>
   <section class="picture"></section>
 

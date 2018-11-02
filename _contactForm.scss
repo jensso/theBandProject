@@ -1,1 +1,99 @@
+section.form{
+  margin:0;
+  background: white;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  color:#777777;
 
+  >p{
+    &:first-of-type{
+    font-size: 1.8vw;
+    letter-spacing: 8px;
+    color: black;
+    }
+    &:nth-of-type(2){
+      margin:0;
+      font-style: italic;
+      font-size: 1.2vw;
+    }
+  }
+
+  >main{
+    width:70%;
+    margin: 1vw auto;
+    display:flex;
+    flex-direction: row;
+
+
+    >div{
+      flex-grow: 1.5;
+      font-size: 1.2vw;
+      text-align:left;
+
+      &:nth-of-type(2){
+        display: grid;
+        grid-row-gap: 0.8vw;
+        flex-grow: 7;
+        margin-left: 5vw;
+        grid-template-areas:"fullname fullname . . email email"
+                            "comment comment comment comment comment comment"
+                            "comment comment comment comment comment comment"
+                            ". . . . . button";
+
+
+        .grid1{
+          grid-area:fullname;
+          // grid-area:1/1/2/4;
+        }
+
+        .grid2{
+          grid-area: email;
+          // grid-area:1/5/2/8;
+        }
+
+        .grid3{
+          grid-area: comment;
+          // grid-area: 2/1/4/8;
+        }
+
+        .grid4{
+          grid-area: button;
+          // grid-area:4/7/5/8;
+          justify-self:end;
+          margin-top: 1.5vw;
+        }
+
+        >button{
+          width:75%;
+          font-size: 1vw;
+          background: #333333;
+          border: 1px solid #333333;
+          color: white;
+          padding: 1vw 1.2vw;
+          transition: all .3s;
+
+          &:hover{
+            background:white;
+            color:#333333;
+          }
+
+        }
+
+      }
+
+      >input, textarea{
+        font-size: 1vw;
+        padding: 0.7vw 0;
+        padding-left: 1vw;
+      }
+
+      >textarea{
+        height: 7vw;
+
+
+      }
+    }
+  }
+
+}

@@ -3,7 +3,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   box-sizing: border-box;
-  background: #777;
 }
 
 body nav {
@@ -37,7 +36,87 @@ body nav li:last-of-type {
   margin-right: 1vw;
 }
 
-section {
-  background: #dd2233;
-  font-size: 3vw;
+section.form {
+  margin: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #777777;
+}
+
+section.form > p:first-of-type {
+  font-size: 1.8vw;
+  letter-spacing: 8px;
+  color: black;
+}
+
+section.form > p:nth-of-type(2) {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2vw;
+}
+
+section.form > main {
+  width: 70%;
+  margin: 1vw auto;
+  display: flex;
+  flex-direction: row;
+}
+
+section.form > main > div {
+  flex-grow: 1.5;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+section.form > main > div:nth-of-type(2) {
+  display: grid;
+  grid-row-gap: 0.8vw;
+  flex-grow: 7;
+  margin-left: 5vw;
+  grid-template-areas: "fullname fullname . . email email" "comment comment comment comment comment comment" "comment comment comment comment comment comment" ". . . . . button";
+}
+
+section.form > main > div:nth-of-type(2) .grid1 {
+  grid-area: fullname;
+}
+
+section.form > main > div:nth-of-type(2) .grid2 {
+  grid-area: email;
+}
+
+section.form > main > div:nth-of-type(2) .grid3 {
+  grid-area: comment;
+}
+
+section.form > main > div:nth-of-type(2) .grid4 {
+  grid-area: button;
+  justify-self: end;
+  margin-top: 1.5vw;
+}
+
+section.form > main > div:nth-of-type(2) > button {
+  width: 75%;
+  font-size: 1vw;
+  background: #333333;
+  border: 1px solid #333333;
+  color: white;
+  padding: 1vw 1.2vw;
+  transition: all .3s;
+}
+
+section.form > main > div:nth-of-type(2) > button:hover {
+  background: white;
+  color: #333333;
+}
+
+section.form > main > div > input, section.form > main > div textarea {
+  font-size: 1vw;
+  padding: 0.7vw 0;
+  padding-left: 1vw;
+}
+
+section.form > main > div > textarea {
+  height: 7vw;
 }
