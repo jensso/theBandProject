@@ -5,36 +5,140 @@ body {
   font-family: sans-serif;
 }
 
-body .carousel .slider {
-  display: flex;
-  width: 100%;
-  height: 50vw;
-  background-size: 100% 100%;
-  margin: 0 1vw;
-}
-
-body .carousel .slider span {
+body .carousel span {
   font-size: 8vw;
   color: silver;
   padding: 20vw 3vw;
   position: absolute;
 }
 
-body .carousel .slider span:nth-of-type(1) {
+body .carousel span:nth-of-type(1) {
   transform: scaleX(-1);
   left: 2vw;
 }
 
-body .carousel .slider span:nth-of-type(2) {
+body .carousel span:nth-of-type(2) {
   right: 2vw;
 }
 
-body .carousel .slider span:hover {
-  color: white;
+body .carousel span:hover {
+  font-size: 9vw;
+  color: gold;
   cursor: pointer;
 }
 
-body .carousel .theBand {
+body .carousel .slider {
+  display: flex;
+  width: 0;
+  height: 0;
+}
+
+body .carousel .slider:nth-of-type(1) {
+  background-image: url(bandImages/onStage_1.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(2) {
+  background-image: url(bandImages/onStage_2.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(3) {
+  background-image: url(bandImages/onStage_3.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(4) {
+  background-image: url(bandImages/onStage_4.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(5) {
+  background-image: url(bandImages/onStage_5.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(6) {
+  background-image: url(bandImages/onStage_6.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(7) {
+  background-image: url(bandImages/onStage_7.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(8) {
+  background-image: url(bandImages/onStage_8.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(9) {
+  background-image: url(bandImages/onStage_9.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(10) {
+  background-image: url(bandImages/onStage_10.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(11) {
+  background-image: url(bandImages/onStage_11.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(12) {
+  background-image: url(bandImages/onStage_12.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(13) {
+  background-image: url(bandImages/onStage_13.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(14) {
+  background-image: url(bandImages/onStage_14.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(15) {
+  background-image: url(bandImages/onStage_15.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(16) {
+  background-image: url(bandImages/onStage_16.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(17) {
+  background-image: url(bandImages/onStage_17.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(18) {
+  background-image: url(bandImages/onStage_18.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(19) {
+  background-image: url(bandImages/onStage_19.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(20) {
+  background-image: url(bandImages/onStage_20.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(1) {
+  width: 100%;
+  height: 50vw;
+}
+
+body .theBand {
   background: white;
   display: flex;
   flex-direction: column;
@@ -42,11 +146,11 @@ body .carousel .theBand {
   justify-content: center;
 }
 
-body .carousel .theBand .bandImages {
+body .theBand .bandImages {
   display: flex;
 }
 
-body .carousel .theBand .bandImages img {
+body .theBand .bandImages img {
   width: 10vw;
   height: 10vw;
   padding: 4vw;
@@ -54,18 +158,18 @@ body .carousel .theBand .bandImages img {
   border-radius: 20vw;
 }
 
-body .carousel p {
+body p {
   font-size: 1vw;
   padding: 1vw 12vw;
   text-align: center;
 }
 
-body .carousel h4 {
+body h4 {
   font-size: 2vw;
   text-transform: uppercase;
 }
 
-body .carousel h6 {
+body h6 {
   font-size: 1.5vw;
 }
 
@@ -113,7 +217,8 @@ body .tourDates .container .location {
 }
 
 body .tourDates .container .location img {
-  height: 10vw;
+  width: 15vw;
+  height: 12vw;
 }
 
 body .tourDates .container .location h6 {
