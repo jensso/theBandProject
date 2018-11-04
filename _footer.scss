@@ -1,0 +1,47 @@
+.picture{
+width: 100%;
+height:55vw;
+background-image: url('map.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+footer{
+  display: inline-block;
+  font-family: Lato;
+  width:100%;
+  padding-top: 2vw;
+  background: #2d2d30;
+  color:#f5f5f5;
+  height: 12vw;
+  font-size: 1vw;
+  text-align:center;
+  vertical-align: middle;
+
+  span.tooltipText {
+      visibility: hidden;
+      width: 5vw;
+      font-size: 0.9vw;
+      background-color: black;
+      color: #ffffff;
+      text-align: center;
+      padding: 0.2vw 0;
+      border-radius: 20%;
+      position: absolute;
+      right:-100%;
+      bottom:80%;
+      z-index: 5;
+  }
+
+  a{
+    position:relative;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #f5f5f5;
+    &:hover .tooltipText {
+        visibility: visible;
+    }
+
+
+  }
+}
