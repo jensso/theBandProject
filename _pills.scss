@@ -1,0 +1,58 @@
+section.pills{
+  width: 70%;
+  margin: 4vw auto;
+  font-size: 1.5vw;
+
+  >h4{
+    text-align:center;
+    letter-spacing: 15px;
+  }
+
+  >ul {
+    display:flex;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+
+    >li{
+    color:#555555;
+    list-style-type: none;
+    border: 1px solid #dddddd;
+    padding: 1vw;
+    margin-right: 0.2vw;
+    font-size: 1vw;
+
+    &:hover{
+      background:#d5d3d3;
+    }
+
+    }
+  }
+
+  div.blogContainer{
+    position:relative;
+    border-top: 1px solid #dddddd;
+    height: 10vw;
+
+
+     div{
+      position:absolute;
+      display:none;
+
+
+       h3, .blogContainer p{
+        text-align: left;
+      }
+
+    }
+
+  }
+}
+
+.active {
+  display:block !important;
+}
+
+.selected{
+  background: white;
+}
