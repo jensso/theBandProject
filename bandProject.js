@@ -19,7 +19,7 @@ arrowLeft.addEventListener(`click`, function(ev) {
     }
     // console.log(count);
     pictures[`${count}`].style.width = `100%`;
-    pictures[`${count}`].style.height = `50vw`;
+    pictures[`${count}`].style.height = `45vw`;
 })
 arrowRight.addEventListener(`click`, function(ev) {
   count--;
@@ -37,5 +37,22 @@ arrowRight.addEventListener(`click`, function(ev) {
     }
     // console.log(count);
     pictures[`${count}`].style.width = `100%`;
-    pictures[`${count}`].style.height = `50vw`;
+    pictures[`${count}`].style.height = `45vw`;
 })
+
+
+let member = document.querySelectorAll(`.bandImages > img`);
+let info = document.querySelectorAll(`.memberInfo`);
+
+for (let i = 0; i < member.length; i++) {
+member[i].addEventListener(`click`, function showInfo(ev) {
+
+  for (let j = 0; j < info.length; j++) {
+    if (info[j].style.display === `flex`) {
+      info[j].style.display = `none`;
+      break;
+    }
+    info[j].style.display = `flex`;
+  }
+})
+}
