@@ -471,7 +471,7 @@ body .tourDates .month:nth-of-type(3) b {
 }
 
 body .tourDates .ticketPopUp {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: relative;
   top: 20vw;
