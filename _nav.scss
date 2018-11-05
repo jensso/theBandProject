@@ -6,7 +6,7 @@ body {
 
   nav{
     height: 3.5vw;
-    background-color: #2a2a2c;
+    background-color: rgba(42, 42, 44, 0.7);
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
@@ -20,8 +20,10 @@ body {
       list-style-type: none;
       flex-grow: .3;
       font-size: 1.2vw;
-      align-self: center;
-      text-align: right;
+      // align-self: center;
+      // text-align: right;
+      height:100%;
+
 
     }
     li:first-of-type{
@@ -33,5 +35,22 @@ body {
     li:last-of-type{
       margin-right: 1vw;
     }
+
+    li:hover{
+      cursor: pointer;
+      color: white;
+      background:#555555;
+    }
+
+    li:first-of-type:hover{
+      cursor:auto;
+      color:white;
+      background-color: #2a2a2c;
+    }
   }
+}
+
+.scrollActive{
+  background:#555555;
+  color:white;
 }

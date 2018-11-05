@@ -1,3 +1,26 @@
+let scrollHeight = document.querySelectorAll('.scrollHeight');
+let navTabs = document.querySelectorAll('nav li');
+let yAxisOfSections = [];
+for (t=0; t<scrollHeight.length; t++){
+  yAxisOfSections.push((scrollHeight[t].offsetTop)-150);
+};
+console.log(yAxisOfSections);
+
+window.addEventListener(`scroll`, function(){
+
+    for(j=0; j<scrollHeight.length; j++){
+      if(window.pageYOffset>=yAxisOfSections[j] && window.pageYOffset<yAxisOfSections[j+1]){
+      navTabs[j+1].classList.add(`scrollActive`);
+    }
+      else {navTabs[j+1].classList.remove(`scrollActive`);
+    }
+  }
+})
+
+
+
+
+
 let blogTabs = document.querySelectorAll('.pills ul li');
 let blogText = document.querySelectorAll('.blogContainer div');
 
