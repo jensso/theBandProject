@@ -67,7 +67,6 @@ arrowLeft.addEventListener(`click`, function(ev) {
     pictures[`${count}`].style.width = `100%`;
     pictures[`${count}`].style.height = `45vw`;
 })
-
 arrowRight.addEventListener(`click`, function(ev) {
   count--;
 
@@ -101,5 +100,25 @@ member[i].addEventListener(`click`, function showInfo(ev) {
     }
     info[j].style.display = `flex`;
   }
+})
+}
+
+let closeButton = document.querySelector(`.ticketPopUp > p > span`);
+let orderBox = document.querySelector(`.ticketPopUp`);
+let cancelButton = document.querySelector(`.cancel`);
+
+closeButton.addEventListener(`click`, function(ev) {
+  orderBox.style.display = `none`;
+})
+cancelButton.addEventListener(`click`, function(ev) {
+  orderBox.style.display = `none`;
+})
+
+
+let buyButton = document.querySelectorAll(`.location > button`);
+
+for (let i = 0; i < buyButton.length; i++) {
+  buyButton[i].addEventListener(`click`, function(ev) {
+    orderBox.style.display = `flex`;
 })
 }
