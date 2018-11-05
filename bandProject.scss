@@ -2,3 +2,212 @@
 @import'contactForm';
 @import'pills';
 @import'footer';
+
+body {
+  margin: 0.5vw auto;
+  box-sizing: border-box;
+  background: #777;
+  font-family: sans-serif;
+
+  .carousel {
+    span {
+      font-size: 8vw;
+      color: silver;
+      padding: 18vw 3vw;
+      position: absolute;
+      &:nth-of-type(1) {
+        transform: scaleX(-1);
+        left: 2vw;
+        }
+      &:nth-of-type(2) {
+        right: 2vw;
+      }
+      &:hover {
+        font-size: 9vw;
+        color: cyan;
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+    .slider {
+      display: flex;
+      width: 0;
+      height: 0;
+
+      @each  $pos, $pic in    (1,onStage_1),
+                              (2,onStage_2),
+                              (3,onStage_3),
+                              (4,onStage_4),
+                              (5,onStage_5),
+                              (6,onStage_6),
+                              (7,onStage_7),
+                              (8,onStage_8),
+                              (9,onStage_9),
+                              (10,onStage_10),
+                              (11,onStage_11),
+                              (12,onStage_12),
+                              (13,onStage_13),
+                              (14,onStage_14),
+                              (15,onStage_15),
+                              (16,onStage_16),
+                              (17,onStage_17),
+                              (18,onStage_18),
+                              (19,onStage_19),
+                              (20,onStage_20),  {
+                                &:nth-of-type(#{$pos}) {
+      background-image: url(bandImages/#{$pic}.jpg);
+      background-size: 100% 100%;
+
+      }
+    }
+    &:nth-of-type(1) {
+      width: 100%;
+      height: 45vw;
+    }
+  }
+}
+  .theBand {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 1.5vw;
+      padding: 1.5vw 4vw;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 3.5vw;
+      font-weight: 700;
+      letter-spacing: 2.5vw;
+
+      text-transform: uppercase;
+    }
+    h6 {
+      font-size: 2.5vw;
+      letter-spacing: 0.5vw;
+      word-spacing: 1.5vw;
+      text-transform: capitalize;
+      font-style: oblique;
+
+    }
+
+    .bandImages {
+      display: flex;
+      img {
+        width: 10vw;
+        height: 10vw;
+        padding: 5vw;
+        border-radius: 20vw;
+        &:hover {
+          cursor: zoom-in;
+          opacity: 0.7;
+          width: 11vw;
+          height: 11vw;
+          // border: 0.2vw solid white;
+        }
+      }
+    }
+
+      .memberInfo {
+        display: none;
+        span {
+          width: 10vw;
+          padding: 5vw;
+          // margin: 0.5vw auto;
+          text-align: center;
+          li {
+            padding-bottom: 1vw;
+            color: #777;
+            list-style-type: none;
+            font-style: oblique;
+          }
+        }
+      }
+    }
+
+  .tourDates {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    color: #777;
+    text-align: center;
+    h4 {
+      font-size: 3.5vw;
+      letter-spacing: 2vw;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    h6 {
+      font-size: 2.5vw;
+      font-stretch: condensed;
+      text-decoration-style: double;
+    }
+
+      .month {
+      font-size: 1.5vw;
+      text-align: justify;
+      margin: 0 12.5vw;
+      padding: 1vw 2.5vw;
+      border: 0.1vw solid #777;
+      background: white;
+      height: 4vw;
+      b {
+        border-radius: 0.5vw;
+        padding: 0.5vw 1.5vw;
+        color: white;
+        background: red;
+      }
+
+      &:nth-of-type(3) {
+      b {
+        color: lightblue;
+        background: #777;
+        border-radius: 25vw;
+      }
+    }
+  }
+      .container {
+      display: flex;
+      justify-content: center;
+      .location {
+        background: white;
+        border: 0.1vw solid #777;
+        margin: 1vw 6vw;
+        padding: 0.5vw;
+        text-align: center;
+        img {
+          width: 15vw;
+          height: 15vw;
+        }
+        h6 {
+          font-size: 2vw;
+          background: white;
+          color: #777;
+        }
+        h5 {
+          background: white;
+          color: #777;
+          font-style: italic;
+          font-weight: lighter;
+
+        }
+        button {
+          font-size: 1vw;
+          background: #777;
+          color: silver;
+          padding: 1vw;
+
+          &:hover {
+            color: #777;
+            background: white;
+            cursor: pointer;
+            border-radius: 1vw;
+            shape-outside: none;
+            }
+          }
+        }
+    }
+  }
+}

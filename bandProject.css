@@ -221,3 +221,297 @@ footer a {
 footer a:hover .tooltipText {
   visibility: visible;
 }
+
+body {
+  margin: 0.5vw auto;
+  box-sizing: border-box;
+  background: #777;
+  font-family: sans-serif;
+}
+
+body .carousel span {
+  font-size: 8vw;
+  color: silver;
+  padding: 18vw 3vw;
+  position: absolute;
+}
+
+body .carousel span:nth-of-type(1) {
+  transform: scaleX(-1);
+  left: 2vw;
+}
+
+body .carousel span:nth-of-type(2) {
+  right: 2vw;
+}
+
+body .carousel span:hover {
+  font-size: 9vw;
+  color: cyan;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+body .carousel .slider {
+  display: flex;
+  width: 0;
+  height: 0;
+}
+
+body .carousel .slider:nth-of-type(1) {
+  background-image: url(bandImages/onStage_1.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(2) {
+  background-image: url(bandImages/onStage_2.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(3) {
+  background-image: url(bandImages/onStage_3.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(4) {
+  background-image: url(bandImages/onStage_4.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(5) {
+  background-image: url(bandImages/onStage_5.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(6) {
+  background-image: url(bandImages/onStage_6.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(7) {
+  background-image: url(bandImages/onStage_7.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(8) {
+  background-image: url(bandImages/onStage_8.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(9) {
+  background-image: url(bandImages/onStage_9.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(10) {
+  background-image: url(bandImages/onStage_10.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(11) {
+  background-image: url(bandImages/onStage_11.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(12) {
+  background-image: url(bandImages/onStage_12.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(13) {
+  background-image: url(bandImages/onStage_13.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(14) {
+  background-image: url(bandImages/onStage_14.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(15) {
+  background-image: url(bandImages/onStage_15.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(16) {
+  background-image: url(bandImages/onStage_16.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(17) {
+  background-image: url(bandImages/onStage_17.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(18) {
+  background-image: url(bandImages/onStage_18.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(19) {
+  background-image: url(bandImages/onStage_19.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(20) {
+  background-image: url(bandImages/onStage_20.jpg);
+  background-size: 100% 100%;
+}
+
+body .carousel .slider:nth-of-type(1) {
+  width: 100%;
+  height: 45vw;
+}
+
+body .theBand {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .theBand p {
+  font-size: 1.5vw;
+  padding: 1.5vw 4vw;
+  text-align: center;
+}
+
+body .theBand h4 {
+  font-size: 3.5vw;
+  font-weight: 700;
+  letter-spacing: 2.5vw;
+  text-transform: uppercase;
+}
+
+body .theBand h6 {
+  font-size: 2.5vw;
+  letter-spacing: 0.5vw;
+  word-spacing: 1.5vw;
+  text-transform: capitalize;
+  font-style: oblique;
+}
+
+body .theBand .bandImages {
+  display: flex;
+}
+
+body .theBand .bandImages img {
+  width: 10vw;
+  height: 10vw;
+  padding: 5vw;
+  border-radius: 20vw;
+}
+
+body .theBand .bandImages img:hover {
+  cursor: zoom-in;
+  opacity: 0.7;
+  width: 11vw;
+  height: 11vw;
+}
+
+body .theBand .memberInfo {
+  display: none;
+}
+
+body .theBand .memberInfo span {
+  width: 10vw;
+  padding: 5vw;
+  text-align: center;
+}
+
+body .theBand .memberInfo span li {
+  padding-bottom: 1vw;
+  color: #777;
+  list-style-type: none;
+  font-style: oblique;
+}
+
+body .tourDates {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  color: #777;
+  text-align: center;
+}
+
+body .tourDates h4 {
+  font-size: 3.5vw;
+  letter-spacing: 2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+body .tourDates h6 {
+  font-size: 2.5vw;
+  font-stretch: condensed;
+  text-decoration-style: double;
+}
+
+body .tourDates .month {
+  font-size: 1.5vw;
+  text-align: justify;
+  margin: 0 12.5vw;
+  padding: 1vw 2.5vw;
+  border: 0.1vw solid #777;
+  background: white;
+  height: 4vw;
+}
+
+body .tourDates .month b {
+  border-radius: 0.5vw;
+  padding: 0.5vw 1.5vw;
+  color: white;
+  background: red;
+}
+
+body .tourDates .month:nth-of-type(3) b {
+  color: lightblue;
+  background: #777;
+  border-radius: 25vw;
+}
+
+body .tourDates .container {
+  display: flex;
+  justify-content: center;
+}
+
+body .tourDates .container .location {
+  background: white;
+  border: 0.1vw solid #777;
+  margin: 1vw 6vw;
+  padding: 0.5vw;
+  text-align: center;
+}
+
+body .tourDates .container .location img {
+  width: 15vw;
+  height: 15vw;
+}
+
+body .tourDates .container .location h6 {
+  font-size: 2vw;
+  background: white;
+  color: #777;
+}
+
+body .tourDates .container .location h5 {
+  background: white;
+  color: #777;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+body .tourDates .container .location button {
+  font-size: 1vw;
+  background: #777;
+  color: silver;
+  padding: 1vw;
+}
+
+body .tourDates .container .location button:hover {
+  color: #777;
+  background: white;
+  cursor: pointer;
+  border-radius: 1vw;
+  shape-outside: none;
+}
