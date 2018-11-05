@@ -7,7 +7,8 @@ body {
 
 body nav {
   height: 3.5vw;
-  background-color: #2a2a2c;
+  box-sizing: border-box;
+  background-color: rgba(42, 42, 44, 0.9);
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
@@ -22,7 +23,33 @@ body nav li {
   flex-grow: .3;
   font-size: 1.2vw;
   align-self: center;
-  text-align: right;
+  vertical-align: middle;
+  height: 100%;
+}
+
+body nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+body nav .dropdown-content a:hover {
+  background-color: red;
+}
+
+body nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 body nav li:first-of-type {
@@ -34,6 +61,23 @@ body nav li:first-of-type {
 
 body nav li:last-of-type {
   margin-right: 1vw;
+}
+
+body nav li:hover {
+  cursor: pointer;
+  color: white;
+  background: #555555;
+}
+
+body nav li:first-of-type:hover {
+  cursor: auto;
+  color: white;
+  background: rgba(42, 42, 44, 0.8);
+}
+
+.scrollActive {
+  background: #555555;
+  color: white;
 }
 
 section.form {
