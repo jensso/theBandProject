@@ -168,7 +168,97 @@ body {
       }
     }
   }
-      .container {
+  .ticketPopUp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20vw;
+    overflow: hidden;
+    width: 50vw;
+    margin: 0 auto;
+    background: white;
+    border: 0.2vw solid silver;
+  p {
+    width: 50vw;
+    height: 10vw;
+    background: black;
+    margin: 0 auto;
+    padding: 4vw;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+    span {
+      margin: 0 0.5vw 6vw 0;
+      padding: 0 0.5vw 0 10vw;
+      color: #777;
+      font-size: 3.5vw;
+      background: black;
+      &:hover {
+        color: #777;
+        cursor: pointer;
+      }
+    }
+  }
+
+  span {
+    width: 100%;
+    height: 2vw;
+    background: white;
+    color: #777;
+    padding: 2vw;
+    margin: 1.5vw 1.5vw;
+    text-align: left;
+    font-weight: 500;
+  }
+  input {
+    text-align: left;
+    padding: 2vw;
+    margin: 0.5vw 2.5vw 1vw 2.5vw;
+    opacity: 0.8;
+  }
+  button {
+    padding: 0.5vw;
+    margin: 1.5vw 2.5vw 3vw 2.5vw;
+    background: black;
+    color: white;
+    &:hover {
+      color: #777;
+      background: white;
+      cursor: pointer;
+    }
+  }
+  .ticketFoot {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw auto;
+
+  button {
+    height: 5vw;
+    font-size: 2vw;
+    padding: 1.5vw 4vw;
+    margin: 2.5vw 2vw;
+    background: black;
+    color: white;
+    border: 0.1vw solid red;
+    // align-items: flex-start;
+    &:hover {
+      color: #777;
+      background: white;
+      cursor: pointer;
+      border: 0.1vw solid black;
+    }
+  }
+  a {
+    font-size: 2vw;
+    margin: 2vw auto;
+    padding: 1vw;
+    text-decoration: none;
+    color: lime;
+    }
+  }
+}
+    .container {
       display: flex;
       justify-content: center;
       .location {
