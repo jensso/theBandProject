@@ -100,6 +100,7 @@ member[i].addEventListener(`click`, function showInfo(ev) {
     }
     info[j].style.display = `flex`;
   }
+
 })
 }
 
