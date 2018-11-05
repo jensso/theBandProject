@@ -19,6 +19,7 @@ for (let i = 0; i < blogTabs.length; i++) {
     blogText[i].classList.add('active');
     blogTabs[i].classList.add('selected');
   })
+}
 
 let arrowLeft = document.querySelector(`.carousel > span:nth-of-type(1)`);
 let arrowRight = document.querySelector(`.carousel > span:nth-of-type(2)`);
@@ -43,6 +44,7 @@ arrowLeft.addEventListener(`click`, function(ev) {
     pictures[`${count}`].style.width = `100%`;
     pictures[`${count}`].style.height = `45vw`;
 })
+
 arrowRight.addEventListener(`click`, function(ev) {
   count--;
 
