@@ -186,13 +186,9 @@ body {
     padding: 4vw;
     color: white;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: 0.5vw;
     span {
-      margin: 0 0.5vw 6vw 0;
-      padding: 0 0.5vw 0 10vw;
-      color: #777;
-      font-size: 3.5vw;
       background: black;
       &:hover {
         color: #777;
@@ -200,6 +196,18 @@ body {
       }
     }
   }
+    span {
+      margin: 0 0.5vw 6vw 0;
+      padding: 0 0.5vw 0 10vw;
+      color: #777;
+      font-size: 2vw;
+      background: black;
+      &:hover {
+        color: #777;
+        cursor: pointer;
+      }
+    }
+
 
   span {
     width: 100%;
