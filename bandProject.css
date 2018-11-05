@@ -7,7 +7,8 @@ body {
 
 body nav {
   height: 3.5vw;
-  background-color: rgba(42, 42, 44, 0.7);
+  box-sizing: border-box;
+  background-color: rgba(42, 42, 44, 0.8);
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
@@ -21,7 +22,34 @@ body nav li {
   list-style-type: none;
   flex-grow: .3;
   font-size: 1.2vw;
+  align-self: center;
+  vertical-align: middle;
   height: 100%;
+}
+
+body nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+body nav .dropdown-content a:hover {
+  background-color: red;
+}
+
+body nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 body nav li:first-of-type {
@@ -44,7 +72,7 @@ body nav li:hover {
 body nav li:first-of-type:hover {
   cursor: auto;
   color: white;
-  background-color: #2a2a2c;
+  background: rgba(42, 42, 44, 0.8);
 }
 
 .scrollActive {
