@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let blogTabs = document.querySelectorAll('.pills ul li');
 let blogText = document.querySelectorAll('.blogContainer div');
 
@@ -20,7 +19,7 @@ for (let i = 0; i < blogTabs.length; i++) {
     blogText[i].classList.add('active');
     blogTabs[i].classList.add('selected');
   })
-=======
+
 let arrowLeft = document.querySelector(`.carousel > span:nth-of-type(1)`);
 let arrowRight = document.querySelector(`.carousel > span:nth-of-type(2)`);
 let pictures = document.querySelectorAll(`.slider`);
@@ -78,5 +77,4 @@ member[i].addEventListener(`click`, function showInfo(ev) {
     info[j].style.display = `flex`;
   }
 })
->>>>>>> a817082aa3f1ce38e1e4986c05ea1539e519ef9c
 }
