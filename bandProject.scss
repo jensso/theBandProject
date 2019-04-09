@@ -4,7 +4,7 @@
 @import'footer';
 
 body {
-  margin: 0.5vw auto;
+  margin: 0 auto;
   box-sizing: border-box;
   background: white;
   font-family: sans-serif;
@@ -126,7 +126,6 @@ body {
         }
       }
     }
-
   .tourDates {
     background: black;
     display: flex;
@@ -144,7 +143,6 @@ body {
       font-stretch: condensed;
       text-decoration-style: double;
     }
-
       .month {
       font-size: 1.5vw;
       text-align: justify;
@@ -159,7 +157,6 @@ body {
         color: white;
         background: red;
       }
-
       &:nth-of-type(3) {
       b {
         color: lightblue;
@@ -196,7 +193,7 @@ body {
       }
     }
   }
-    span {
+  span {
       margin: 0 0.5vw 6vw 0;
       padding: 0 0.5vw 0 10vw;
       color: #777;
@@ -207,8 +204,6 @@ body {
         cursor: pointer;
       }
     }
-
-
   span {
     width: 100%;
     height: 2vw;
@@ -240,7 +235,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 5vw auto;
-
   button {
     height: 5vw;
     font-size: 2vw;
